@@ -1,0 +1,75 @@
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Reset some default styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the main container */
+.todo-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style each todo item */
+.todo-item, .todo-item-odd {
+  display: flex;
+  background-color: #4caf50;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.todo-item-odd {
+  background-color: beige;
+}
+
+/*style the text*/
+.todo-item .task-text,
+.todo-item-odd .task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+/* Style the 'Done' button */
+.todo-item .done-btn, 
+.todo-item-odd .done-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the 'Remove' button */
+.todo-item .remove-btn,
+ .todo-item-odd .remove-btn {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
